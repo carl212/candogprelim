@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEHOLD BOHOL</title>
+    <link rel="stylesheet" href="../candog-prelim/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<style>
+   .about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content,
+.about-image {
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.about-text {
+    border: 1px solid #ccc;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive styles */
+@media only screen and (min-width: 768px) {
+    .about-us {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-content {
+        width: 50%;
+    }
+
+    .about-image {
+        width: 50%;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <a href="index.html" class="BOHOL">BOHOL</a>
+        <div class="men-btn"></div>
+        <div class="navigation">
+            <div class="navigation-item">
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">GALLERY</a>
+             
+
+
+            </div>
+
+        </div>
+    </header>
+    <section class="home">
+        <video class="cover-ph active" autoplay muted loop >
+            <source src="../candog-prelim/assets/video/Bohol in ONE MINUTE (A travel video).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <img class="cover-ph" src="../candog-prelim/assets/images/floating.jpg">
+        <img class="cover-ph" src="../candog-prelim/assets/images/tarsier.jpg">
+<div class="content active">
+    <h1>CHOCOLATE<br><span> HILLS</span></h1>
+    <p>The hills are located throughout the towns of Carmen, Batuan and Sagbayan and consist of about 1,776 mounds of the same general shape. During the dry season when precipitation in inadequate, the grass-covered hills turn chocolate brown, hence the name in reference to a branded confection.</p>
+    <a href="#" onclick="navigateToAbout()">Read more</a>
+</div>
+<div class="content">
+    <h1>FLOATING<br><span> RESTAURANT</span></h1>
+    <p>Today, it is also said to be one of the cleanest rivers in the Philippines. Loboc River passes through Loay Bridge, Loboc Church, and Busay Falls. Over the years, Loboc gained popularity among tourists because of its river cruise. Since then, many attractions in Loboc have been developed to welcome more tourists.</p>
+    <a href="#" onclick="navigateToAbout()">Read more</a>
+</div>
+<div class="content">
+    <h1>BOHOL<br><span> TARSIER</span></h1>
+    <p>Bohol is the 10th largest of the Philippines' 7,641 islands. This island-province is made up of 47 towns and 75 component islands strewn about it. There is an abundance of sightseeing here which proves much to do while you are on vacation. Bohol is well known for its famous Chocolate Hills.</p>
+    <a href="#" onclick="navigateToAbout()">Read more</a>
+</div>
+<div class="s-media-icons">
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+     
+</div>
+<div class="slider-navigation">
+<div class="nav-btn active"></div>
+<div class="nav-btn"></div>
+<div class="nav-btn"></div>
+
+</div>
+
+    </section>
+    <section id="about-us" class="about-us">
+        <div class="about-content">
+            <h2>About Bohol</h2>
+            <div id="about_us">
+<br><br>
+Bohols´s terrain is rolling Hills.
+
+The islands´ interior is generally flat but dotted with numerous haycock-shaped hills popularly know as the Chocolate Hills. The southern part is basically mountainous, with deep gullies and gorges that slope abruptly to the sea. The northern section has alluvial valleys and low-lying hills.
+
+The coastline, except in the north is characterized by woodlands, grass, and dense swamplands. 75 small islands can be found off the mainland, with Panglao considered as the largest. The climate varies in different areas – warm and dry along the coast; cold and humid in the interior. Rainfall, however, is evenly distributed.
+
+A Brief History
+Created on March 10, 1917, Bohol derives its name from the early village of Bool, near what is now Tagbilaran. The island came under Spanish rule in 1565. Two major rebellions against the Spaniards happened in this province: the Tamblot revolt in 1621 and the Dagohoy revolt, which happened from 1744 to 1829 and is considered the longest revolt in Philippine history. The province is also known as the home province of Carlos P. Garcia, the fourth President of the Philippines.
+
+The People
+Boholanos are known to be good traders and often referred to as the “Ilocanos of the South”. This is because of their frugality and being industrious. The majority of the people speak the Cebuano dialect and English.
+
+Commerce and Industry
+Agriculture is the main industry in the province. Products mostly-generated are rice, coconut, and corn. Fishing can be found in the northern towns, particularly those beside the Camotes Sea. Among the minerals the province produces are manganese, iron, and tin. Bohol’s handicrafts are famous throughout the country. These include baskets, items woven with saguran fibers, abaca mats and slippers, the buntal hats of Talibon, and spellcraft. These crafts are sold in souvenir shops all over the country.
+                
+                </div>
+            
+        </div>
+        <div class="about-image">
+            <img src="../candog-prelim/assets/images/map.png" alt="About Bohol Image">
+        </div>
+    </section>
+    <script type="text/javascript"> 
+        const menuBtn = document.querySelector(".men-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+        const cover = document.querySelectorAll(".cover-ph");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav=function(manual){
+            btns.forEach((btn) => {
+            btn.classList.remove("active");
+            });
+
+            cover.forEach((cover) => {
+            cover.classList.remove("active");
+            });
+            contents.forEach((content) => {
+            content.classList.remove("active");
+            });
+
+
+
+            btns[manual].classList.add("active");
+            cover[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+        btns.forEach((btn, i) => {
+         btn.addEventListener("click", () => {
+            sliderNav(i);
+         });
+        });
+        function navigateToAbout() {
+            document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+</body>
+</html>

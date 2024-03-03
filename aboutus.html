@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../candog-prelim/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="BOHOL">BOHOL</a>
+        <div class="men-btn"></div>
+        <div class="navigation">
+            <div class="navigation-item">
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="aboutus.html">ABOUT US</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <img class="cover-ph" src="../candog-prelim/assets/images/hills.jpeg">
+    </section>
+    <section class="about-us">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>This is where you can introduce your company or organization.</p>
+            <!-- Add more content as needed -->
+        </div>
+    </section>
+    <script type="text/javascript"> 
+        const menuBtn = document.querySelector(".men-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        // Your existing script for sliderNav function can remain as it is
+    </script>
+</body>
+</html>
