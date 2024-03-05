@@ -283,7 +283,7 @@ section {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('../Prelim/assets/images/bohol.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-image: url(https://cdn.britannica.com/17/123117-050-3C01E9D1/Chocolate-Hills-island-grass-cover-appearance-Bohol.jpg);
     background-size: cover;
     background-position: center;
   }
